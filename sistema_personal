@@ -1,0 +1,14 @@
+<?php
+class Empleado{
+    private $conn;
+    private $table_name = "empleado";
+
+    public $cod_empleado;
+    public $nombres;
+    public $apellidos;
+    public $dni;
+
+    public function _construct($db){
+         $this->conn = $db;
+    }
+}
